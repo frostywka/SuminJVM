@@ -7,17 +7,18 @@ public class DZ6 {
         //проинициализировать его значениями взятыми из первого массива, но в обратном порядке.
         // в цикле for each вывести все элементы второго массива
 
-        int[] massive = new int[1000];
+        int[] massive = new int[900];
+        for (int i = 0; i < massive.length; i++) {
+            massive[i] = i + 100;
+        }
         int[] secondMassive = new int[massive.length];
-
-        for (int i = 100, j = massive.length-1; i < massive.length; i++, j--) {
-            massive[i] = i++;
-            secondMassive[i] = j--;
+        for (int i = 0, j = massive.length - 1; i < massive.length; i++, j--) {
+            secondMassive[j] = massive[i];
         }
-        for (int i : secondMassive) {
+        for (int i : secondMassive){
             System.out.println(i);
-
         }
+
     }
 }
 
