@@ -12,7 +12,7 @@ public class dz1 {
         // Решение от Сумина
         // вывести все месяцы через запятую ! а у последнего элемента поставить точку
 
-        String[] namesOfMonth = {
+        String[] namesOfMonth = {  // создание массива с данными
                 "Январь",
                 "Февраль",
                 "Март",
@@ -26,13 +26,15 @@ public class dz1 {
                 "Ноябрь",
                 "Декабрь"
         };
-        String result = "";
-        for (int j = 0; j <namesOfMonth.length; j++){
-            result += namesOfMonth[j];
-            if (j==namesOfMonth.length-1) {// индекс последнего массива равен -1
-                result +=".";
+        String result = "";  // Нужно создать переменную с результатом куда будет выводиться ответ
+        for (int j = 0; j <namesOfMonth.length; j++){ // цикл FOR чтобы определить последнее значение в цикле(счетчике
+            result += namesOfMonth[j]; // к нашей переменной нужно прикрепить первый месяц
+            if (j==namesOfMonth.length-1) {// индекс последнего массива равен -1 ! Проверка последений ли перед нами элемент
+                result +="."; // если последний элемент,
+
+                // то добавляем точку
             } else {
-                result +=", ";
+                result +=", "; // если Не последний элемент, то запятая
             }
          }
         System.out.println(result);
