@@ -1,4 +1,4 @@
-package block3_OOP.block32;
+package block3_OOP.block32_Methods;
 
 public class Box {
     double width;

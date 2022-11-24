@@ -1,4 +1,4 @@
-package block3_OOP.block32DZ;
+package block3_OOP.block32_Methods.block32DZ;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Main {
 
         dog.run(); // VOID
 
-        String info1 = dog.info();
-        System.out.println(info1);
+//        String info1 = dog.info();
+        System.out.println(dog.info());
     }
 }

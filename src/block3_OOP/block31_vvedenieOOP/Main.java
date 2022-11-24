@@ -1,4 +1,4 @@
-package block3_OOP.block31;
+package block3_OOP.block31_vvedenieOOP;
 
 public class Main {
     public static void main(String[] args) {
